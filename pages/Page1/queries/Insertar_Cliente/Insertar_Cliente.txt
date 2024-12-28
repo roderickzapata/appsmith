@@ -1,0 +1,2 @@
+INSERT INTO public."clientes" (nombre, correo, telefono, direccion, identificador_fiscal)
+VALUES ('{{InputNombre.text}}', '{{InputCorreo.text}}', '{{InputTelefono.text}}', '{{InputDireccion.text}}', '{{InputIdentificador.text}}');
