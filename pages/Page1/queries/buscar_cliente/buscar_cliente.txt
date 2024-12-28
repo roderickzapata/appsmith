@@ -1,5 +1,0 @@
-SELECT id, nombre, identificador_fiscal
-FROM public."clientes"
-WHERE 
-     LOWER(nombre) LIKE LOWER('%{{InputBuscarCliente.text || ''}}%')
-LIMIT 10;

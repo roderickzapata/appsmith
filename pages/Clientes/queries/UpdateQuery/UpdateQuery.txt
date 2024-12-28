@@ -1,0 +1,7 @@
+UPDATE public."clientes" SET
+		"nombre" = '{{update_form.fieldState.nombre.isVisible ? update_form.formData.nombre : update_form.sourceData.nombre}}',
+		"correo" = '{{update_form.fieldState.correo.isVisible ? update_form.formData.correo : update_form.sourceData.correo}}',
+    "telefono" = '{{update_form.fieldState.telefono.isVisible ? update_form.formData.telefono : update_form.sourceData.telefono}}',
+		"direccion" = '{{update_form.fieldState.direccion.isVisible ? update_form.formData.direccion : update_form.sourceData.direccion}}',
+		"identificador_fiscal" = '{{update_form.fieldState.identificador_fiscal.isVisible ? update_form.formData.identificador_fiscal : update_form.sourceData.identificador_fiscal}}'
+WHERE "id" = {{data_table.selectedRow.id}};

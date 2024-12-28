@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "676f85c475d4d548204e2ab5_630e0256-ccaf-4ae6-a5cf-11012ca43d3d",
+  "id": "Main_FiltrarBusquedaCliente",
+  "unpublishedCollection": {
+    "name": "FiltrarBusquedaCliente",
+    "pageId": "Main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "debounceBuscarCliente",
+        "value": "_.debounce(() => buscar_cliente.run(), 300)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+SELECT id, nombre, identificador_fiscal 
+FROM public."clientes"
+WHERE 
+  (unaccent(LOWER(nombre)) LIKE '%' || unaccent(LOWER({{ClientesBD.filterText || ''}})) || '%'
+  OR unaccent(LOWER(identificador_fiscal)) LIKE '%' || unaccent(LOWER({{ClientesBD.filterText || ''}})) || '%')
+  OR {{ClientesBD.filterText === ''}} -- Carga inicial sin filtro
+LIMIT 10;

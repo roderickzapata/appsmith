@@ -1,0 +1,12 @@
+INSERT INTO public."clientes" (
+	"nombre",
+	"correo",
+	"telefono",
+	"direccion",
+	"identificador_fiscal")
+VALUES (
+	'{{insert_form.formData.nombre}}',
+	'{{insert_form.formData.correo}}',
+	'{{insert_form.formData.telefono}}',
+	'{{insert_form.formData.direccion}}',
+	'{{insert_form.formData.identificador_fiscal}}');

@@ -6,8 +6,12 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Page1",
+      "id": "Main",
       "isDefault": true
+    },
+    {
+      "id": "Clientes",
+      "isDefault": false
     }
   ]
 }
